@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/meds
+    username: admin
+    password: admin12345
+
+  jpa:
+    hibernate:
+      ddl-auto: validate    # o update para que cree tablas si no existen
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
