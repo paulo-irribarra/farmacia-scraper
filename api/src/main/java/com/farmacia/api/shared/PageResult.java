@@ -1,4 +1,4 @@
 package com.farmacia.api.shared;
 
-public class PageResult {
-}
+import java.util.List;
+public record PageResult<T>(List<T> content, long totalElements, int page, int size) {}
